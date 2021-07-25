@@ -14,6 +14,8 @@ public class HighwayChanging : MonoBehaviour
     public Vector2 destinationRight;
     public Vector2 destinationInPlay;
 
+    public float speed = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,13 +39,15 @@ public class HighwayChanging : MonoBehaviour
             CurrentHighway = 3;
         }
 
-        
+        //float lerpSpeed = speed * Time.deltaTime;
 
         if (CurrentHighway == 1)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                HighwayOne.transform.position = Vector2.Lerp(transform.position, destinationRight, Time.deltaTime);
+                HighwayOne.transform.position = Vector2.Lerp(destinationInPlay, destinationLeft, Time.deltaTime);
+                HighwayTwo.transform.position = Vector2.Lerp(destinationRight, destinationInPlay, Time.deltaTime);
+                HighwayThree.transform.position = Vector2.Lerp(destinationLeft, destinationRight, Time.deltaTime);
             }
         } 
         else if (CurrentHighway == 2)
