@@ -51,6 +51,7 @@ public class Jukebox : MonoBehaviour
 
     void Start()
     {
+        m_Output.volume = 0.2f;
         Instance.PlayTrack(0);
     }
 
