@@ -56,7 +56,27 @@ public class Jukebox : MonoBehaviour
 
     void Update()
     {
-
+        //DEBUG INPUT - REMOVE AFTER SUCCESSFUL TESTS
+        if (Input.GetKeyDown("0"))
+        {
+            PlayTrack(0);
+            Debug.Log("Initiate Title Screen BGM.");
+        }
+        else if (Input.GetKeyDown("1"))
+        {
+            PlayTrack(1);
+            Debug.Log("Initiate Track 1.");
+        }
+        else if (Input.GetKeyDown("2"))
+        {
+            PlayTrack(2);
+            Debug.Log("Initiate Track 2.");
+        }
+        else if (Input.GetKeyDown("3"))
+        {
+            PlayTrack(3);
+            Debug.Log("Initiate Track 3.");
+        }
     }
 
     void PlayTrack(int Track)
@@ -64,37 +84,46 @@ public class Jukebox : MonoBehaviour
         if (Track == 0)
         {
             //StopTrack();
+            gameObject.GetComponent<AudioSource>().clip = m_TitleScreenBGM;
             m_CurrentTrack = 0;
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 0;
+
+            Debug.Log("This is the Title Screen BGM.");
         }
         else if (Track == 1 && m_CurrentTrack != 1)
         {
             //StopTrack();
-            //SoundManager.Instance.BGM_Start("m_BGM_TitleScreen");
-            m_Output.GetComponent<>
+            gameObject.GetComponent<AudioSource>().clip = m_Track1;
             m_CurrentTrack = 1;
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 120;        //Change to whatever the actual BPM is once we get to it.
+
+            Debug.Log("This is Track 1.");
         }
         else if (Track == 2 && m_CurrentTrack != 2)
         {
             //StopTrack();
-            //SoundManager.Instance.BGM_Start("m_BGM_Exploration_Neutral");
+            gameObject.GetComponent<AudioSource>().clip = m_Track2;
             m_CurrentTrack = 2;
             m_AllTracks[m_CurrentTrack] = true;
-            m_BPM = 120;        //Change to whatever the actual BPM is once we get to it.
+            m_BPM = 140;        //Change to whatever the actual BPM is once we get to it.
+
+            Debug.Log("This is Track 2.");
         }
         else if (Track == 3 && m_CurrentTrack != 3)
         {
             //StopTrack();
-            //SoundManager.Instance.BGM_Start("m_BGM_Exploration_Eerie");
+            gameObject.GetComponent<AudioSource>().clip = m_Track3;
             m_CurrentTrack = 3;
             m_AllTracks[m_CurrentTrack] = true;
-            m_BPM = 120;        //Change to whatever the actual BPM is once we get to it.
+            m_BPM = 160;        //Change to whatever the actual BPM is once we get to it.
+
+            Debug.Log("This is Track 3.");
         }
 
         m_TrackIsPlaying = true;
+        m_Output.Play();
     }
 
     void StopTrack()

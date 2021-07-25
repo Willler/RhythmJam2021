@@ -158,10 +158,10 @@ MonoBehaviour:
   m_TrackIsPlaying: 0
   m_CurrentTrack: 0
   m_BPM: 0
-  m_TitleScreenBGM: {fileID: 0}
-  m_Track1: {fileID: 0}
-  m_Track2: {fileID: 0}
-  m_Track3: {fileID: 0}
+  m_TitleScreenBGM: {fileID: 8300000, guid: 7b2744855b7dcca4f82ea134767c70a8, type: 3}
+  m_Track1: {fileID: 8300000, guid: afce6f0ca4d69dd43878a044408bac2f, type: 3}
+  m_Track2: {fileID: 8300000, guid: 5f83d33a3f4bede4b95e3c3be3281fd0, type: 3}
+  m_Track3: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
   m_AllTracks: 00000000
 --- !u!114 &102423122
 MonoBehaviour:
