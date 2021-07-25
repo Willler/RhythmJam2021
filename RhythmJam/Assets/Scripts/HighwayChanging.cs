@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class HighwayChanging : MonoBehaviour
 {
-    public GameObject HighwayOne;
-    public GameObject HighwayTwo;
-    public GameObject HighwayThree;
 
-    public int CurrentHighway;
+    public float rotation = 0f;
+    public Vector3 angles = Vector3.forward;
+    public float keySpeed = 25f;
 
-    public Vector2 destinationLeft;
-    public Vector2 destinationRight;
-    public Vector2 destinationInPlay;
 
-    public float speed = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,37 +21,17 @@ public class HighwayChanging : MonoBehaviour
     void Update()
     {
 
-        if (HighwayOne.transform.position.x == 0)
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            CurrentHighway = 1;
-        } 
-        else if (HighwayTwo.transform.position.x == 0)
-        {
-            CurrentHighway = 2;
-        } 
-        else if (HighwayThree.transform.position.x == 0)
-        {
-            CurrentHighway = 3;
+            transform.Rotate(0f, 0f, 120f);
         }
-
-        //float lerpSpeed = speed * Time.deltaTime;
-
-        if (CurrentHighway == 1)
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                HighwayOne.transform.position = Vector2.Lerp(destinationInPlay, destinationLeft, Time.deltaTime);
-                HighwayTwo.transform.position = Vector2.Lerp(destinationRight, destinationInPlay, Time.deltaTime);
-                HighwayThree.transform.position = Vector2.Lerp(destinationLeft, destinationRight, Time.deltaTime);
-            }
-        } 
-        else if (CurrentHighway == 2)
-        {
-
-        } 
-        else if (CurrentHighway == 3)
-        {
-
+            transform.Rotate(0f, 0f, -120f);
         }
+            
     }
+
+        
 }
