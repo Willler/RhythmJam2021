@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Left_Lane
+  - Right_Lane
+  - Center_Lane
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackgroundLane
+    uniqueID: 135458623
+    locked: 0
+  - name: PlayerLayer
+    uniqueID: 1551145451
     locked: 0
