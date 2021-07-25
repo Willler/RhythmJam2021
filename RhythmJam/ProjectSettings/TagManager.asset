@@ -7,6 +7,11 @@ TagManager:
   - Left_Lane
   - Right_Lane
   - Center_Lane
+  - Highway1
+  - Highway2
+  - Highway3
+  - RevealBox
+  - Highway2Box
   layers:
   - Default
   - TransparentFX
