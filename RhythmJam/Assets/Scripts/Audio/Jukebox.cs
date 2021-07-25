@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Jukebox : MonoBehaviour
 {
     [Header("Jukebox")]
+    [SerializeField] private AudioSource m_Output = null;
     [SerializeField] private bool m_TrackIsPlaying = false; //Checks if a track is playing.
     [SerializeField] private int m_CurrentTrack = 0;        //Indicates which track is playing.
     [SerializeField] private int m_BPM = 0;                 //The BPM/tempo of the song.
 
     [Header("Tracks")]
+    [SerializeField] private AudioClip m_TitleScreenBGM = null;
+    [SerializeField] private AudioClip m_Track1 = null;
+    [SerializeField] private AudioClip m_Track2 = null;
+    [SerializeField] private AudioClip m_Track3 = null;
     [SerializeField] private bool[] m_AllTracks;            //Bool to check which track is playing.
-    
 
     private static Jukebox instance;
 
@@ -67,6 +72,7 @@ public class Jukebox : MonoBehaviour
         {
             //StopTrack();
             //SoundManager.Instance.BGM_Start("m_BGM_TitleScreen");
+            m_Output.GetComponent<>
             m_CurrentTrack = 1;
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 120;        //Change to whatever the actual BPM is once we get to it.
