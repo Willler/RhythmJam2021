@@ -21,6 +21,8 @@ public class Jukebox : MonoBehaviour
     [SerializeField] private AudioClip m_Track3 = null;
     [SerializeField] private bool[] m_AllTracks;            //Bool to check which track is playing.
 
+    [Header("Fade In & Out")]
+
     private static Jukebox instance;
 
     public static Jukebox Instance
