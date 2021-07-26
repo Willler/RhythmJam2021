@@ -12,6 +12,8 @@ TagManager:
   - Highway3
   - RevealBox
   - Highway2Box
+  - Enlarger
+  - Enemy
   layers:
   - Default
   - TransparentFX

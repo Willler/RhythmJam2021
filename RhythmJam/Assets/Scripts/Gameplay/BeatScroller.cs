@@ -10,6 +10,8 @@ public class BeatScroller : MonoBehaviour
     public bool gameStarted;
     public GameObject HighwayController;
 
+    [SerializeField] private Animator enlargeNote;
+
     public float angled;
     // Start is called before the first frame update
     void Start()
@@ -40,5 +42,13 @@ public class BeatScroller : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enlarger"))
+        {
+            enlargeNote.SetBool("enlargeTrigger", true);
+        }
     }
 }

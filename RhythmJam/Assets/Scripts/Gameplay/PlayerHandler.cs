@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHandler : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class PlayerHandler : MonoBehaviour
     public static bool isOnCenterLane;
     
     private float activeHighway = 1f;
+
+    public Text scoreText;
+    public Text multiplierText;
     // Start is called before the first frame update
     void Start()
     {
@@ -108,16 +112,24 @@ public class PlayerHandler : MonoBehaviour
 
 
     }
-
+     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "RevealBox")
+        if (other.tag == "Enemy")
         {
-            activeHighway = 1f;
-        } else if (other.tag == "Highway2Box")
-        {
-            activeHighway = 2f;
-            Debug.Log("highway 2");
+            
+            GameManagerLevels.currentScore -= 100;
+            Debug.Log(GameManagerLevels.currentScore);
+            scoreText.text = "Score: " + GameManagerLevels.currentScore;
+            GameManagerLevels.currentMultiplier = 1;
+            GameManagerLevels.multiplierTracker = 0;
+            multiplierText.text = "Multi: " + GameManagerLevels.currentMultiplier;
+
+            //play sound of impact here
+            Destroy(other.gameObject);
+
         }
     }
+
+ 
 }

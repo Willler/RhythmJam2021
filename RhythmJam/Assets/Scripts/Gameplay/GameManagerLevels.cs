@@ -17,11 +17,18 @@ public class GameManagerLevels : MonoBehaviour
     //referencing this to make sure there is only one instance at a time
     public static GameManagerLevels instance;
 
-    public int currentScore;
+    //numerical score variables
+    public static int currentScore;
     public int scorePerNote = 100;
 
+    //UI Text Elements
     public Text scoreText;
     public Text multiText;
+
+    public static int multiplierTracker;
+    public static int currentMultiplier;
+    public int[] multiplierThreshold;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +36,7 @@ public class GameManagerLevels : MonoBehaviour
         instance = this;
 
         scoreText.text = "Score: 0";
+        currentMultiplier = 1;
     }
 
     // Update is called once per frame
@@ -52,7 +60,21 @@ public class GameManagerLevels : MonoBehaviour
     public void noteHit()
     {
         Debug.Log("Hit");
-        currentScore = currentScore + scorePerNote;
+
+        if (currentMultiplier - 1 < multiplierThreshold.Length)
+        {
+            multiplierTracker++;
+
+            if (multiplierThreshold[currentMultiplier - 1] <= multiplierTracker)
+            {
+                multiplierTracker = 0;
+                currentMultiplier++;
+            }
+        }
+
+        multiText.text = "Multi: " + currentMultiplier;
+
+        currentScore = currentScore + scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
     }
 
