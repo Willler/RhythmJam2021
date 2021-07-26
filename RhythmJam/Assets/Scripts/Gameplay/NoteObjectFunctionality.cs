@@ -5,6 +5,8 @@ using UnityEngine;
 public class NoteObjectFunctionality : MonoBehaviour
 {
     public bool canBePressed;
+    public bool canBePressedLeft;
+    public bool canBePressedRight;
 
     public KeyCode keyToPress;
     
@@ -17,12 +19,42 @@ public class NoteObjectFunctionality : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (PlayerHandler.isOnLeftLane)
         {
-            if (canBePressed)
-            {
-                gameObject.SetActive(false);
+            if (Input.GetKey(keyToPress) && Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(keyToPress))
 
+            {
+                
+                if (canBePressedLeft)
+                {
+                    gameObject.SetActive(false);
+                    GameManagerLevels.instance.noteHit();
+                }
+            }
+        } else if (PlayerHandler.isOnRightLane)
+        {
+            if (Input.GetKey(keyToPress) && Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow) && Input.GetKey(keyToPress))
+
+            {
+                
+                if (canBePressedRight)
+                {
+                    gameObject.SetActive(false);
+                    GameManagerLevels.instance.noteHit();
+                    
+                }
+            }
+        } else
+        {
+            if (Input.GetKey(keyToPress) && Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow) && Input.GetKey(keyToPress))
+
+            {
+                
+                if (canBePressed)
+                {
+                    gameObject.SetActive(false);
+                    GameManagerLevels.instance.noteHit();
+                }
             }
         }
     }
@@ -31,7 +63,17 @@ public class NoteObjectFunctionality : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            canBePressed = true;
+            if (PlayerHandler.isOnLeftLane)
+            {
+                canBePressedLeft = true;
+            } else if (PlayerHandler.isOnCenterLane)
+            {
+                canBePressed = true;
+            } else if (PlayerHandler.isOnRightLane)
+            {
+                canBePressedRight = true;
+            }
+            
         }
     }
 
@@ -40,6 +82,7 @@ public class NoteObjectFunctionality : MonoBehaviour
         if (other.tag == "Player")
         {
             canBePressed = false;
+            GameManagerLevels.instance.noteMissed();
         }
     }
 }
