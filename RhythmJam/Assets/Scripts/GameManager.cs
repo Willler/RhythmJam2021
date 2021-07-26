@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (m_InGame && !m_Pause)
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
                 Start_Screen.Instance.BackIsClicked();
             }
         }
+        */
     }
 
     public void LoadScene(string SceneToLoad)
@@ -74,8 +76,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneToLoad);
     }
 
-
-
+    /*
     public void Resume()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -111,6 +112,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         m_GameOverMenu.SetActive(true);
     }
+    */
 
     public void Quit()
     {

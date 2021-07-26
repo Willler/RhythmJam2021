@@ -68,22 +68,22 @@ public class Jukebox : MonoBehaviour
         if (Input.GetKeyDown("0"))
         {
             PlayTrack(0);
-            Debug.Log("Initiate Title Screen BGM.");
+            //Debug.Log("Initiate Title Screen BGM.");
         }
         else if (Input.GetKeyDown("1"))
         {
             PlayTrack(1);
-            Debug.Log("Initiate Track 1.");
+            //Debug.Log("Initiate Track 1.");
         }
         else if (Input.GetKeyDown("2"))
         {
             PlayTrack(2);
-            Debug.Log("Initiate Track 2.");
+            //Debug.Log("Initiate Track 2.");
         }
         else if (Input.GetKeyDown("3"))
         {
             PlayTrack(3);
-            Debug.Log("Initiate Track 3.");
+            //Debug.Log("Initiate Track 3.");
         }
     }
 
