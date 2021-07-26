@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerHandler : MonoBehaviour
 {
 
-    private bool isOnLeftLane;
-    private bool isOnRightLane;
+    public static bool isOnLeftLane;
+    public static bool isOnRightLane;
+    public static bool isOnCenterLane;
     
     private float activeHighway = 1f;
     // Start is called before the first frame update
@@ -21,24 +22,27 @@ public class PlayerHandler : MonoBehaviour
 
         if (this.transform.position.x == 0f)
         {
-            Debug.Log("In the center lane");
+            
+            isOnCenterLane = true;
             isOnLeftLane = false;
             isOnRightLane = false;
         } else if (this.transform.position.x == -3.4f)
         {
-            Debug.Log("In the left lane");
+            
+            isOnCenterLane = false;
             isOnLeftLane = true;
             isOnRightLane = false;
         } else if (this.transform.position.x == 3.4f)
         {
-            Debug.Log("In the right lane");
+            
+            isOnCenterLane = false;
             isOnLeftLane = false;
             isOnRightLane = true;
         }
 
 
       
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.position = new Vector3(-3.4f, -4f, 0f);
 
