@@ -5,8 +5,11 @@ using UnityEngine.Audio;
 
 public class Jukebox : MonoBehaviour
 {
-    [Header("Jukebox")]
+    [Header("Audio Components")]
+    [SerializeField] private AudioMixer m_MasterMixer;
     [SerializeField] private AudioSource m_Output = null;
+
+    [Header("Jukebox")]
     [SerializeField] private bool m_TrackIsPlaying = false; //Checks if a track is playing.
     [SerializeField] private int m_CurrentTrack = 0;        //Indicates which track is playing.
     [SerializeField] private int m_BPM = 0;                 //The BPM/tempo of the song.
@@ -51,7 +54,6 @@ public class Jukebox : MonoBehaviour
 
     void Start()
     {
-        m_Output.volume = 0.2f;
         Instance.PlayTrack(0);
     }
 
@@ -84,7 +86,7 @@ public class Jukebox : MonoBehaviour
     {
         if (Track == 0)
         {
-            //StopTrack();
+            StopTrack();
             gameObject.GetComponent<AudioSource>().clip = m_TitleScreenBGM;
             m_CurrentTrack = 0;
             m_AllTracks[m_CurrentTrack] = true;
@@ -94,7 +96,7 @@ public class Jukebox : MonoBehaviour
         }
         else if (Track == 1 && m_CurrentTrack != 1)
         {
-            //StopTrack();
+            StopTrack();
             gameObject.GetComponent<AudioSource>().clip = m_Track1;
             m_CurrentTrack = 1;
             m_AllTracks[m_CurrentTrack] = true;
@@ -104,7 +106,7 @@ public class Jukebox : MonoBehaviour
         }
         else if (Track == 2 && m_CurrentTrack != 2)
         {
-            //StopTrack();
+            StopTrack();
             gameObject.GetComponent<AudioSource>().clip = m_Track2;
             m_CurrentTrack = 2;
             m_AllTracks[m_CurrentTrack] = true;
@@ -114,7 +116,7 @@ public class Jukebox : MonoBehaviour
         }
         else if (Track == 3 && m_CurrentTrack != 3)
         {
-            //StopTrack();
+            StopTrack();
             gameObject.GetComponent<AudioSource>().clip = m_Track3;
             m_CurrentTrack = 3;
             m_AllTracks[m_CurrentTrack] = true;
@@ -149,5 +151,7 @@ public class Jukebox : MonoBehaviour
             //SoundManager.Instance.BGM_Stop("m_BGM_Exploration_Eerie_Stop");
             m_AllTracks[3] = false;
         }
+
+        m_Output.Stop();
     }
 }
