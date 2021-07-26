@@ -82,4 +82,9 @@ public class Menu_Handler : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         m_GameOverMenu.SetActive(true);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

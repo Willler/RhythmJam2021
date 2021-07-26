@@ -7,18 +7,18 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     [Header("Audio Components")]
-    [SerializeField] private AudioMixer m_MasterMixer;
+    [SerializeField] private AudioMixer m_MasterMixer = null;
     [SerializeField] private AudioSource m_Output = null;
 
     [Header("SFX Audio Clips")]
-    [SerializeField] private AudioClip m_Button_Hover;
-    [SerializeField] private AudioClip m_Button_Click;
+    [SerializeField] private AudioClip m_Button_Hover = null;
+    [SerializeField] private AudioClip m_Button_Click = null;
     [Space(10)]
-    [SerializeField] private AudioClip m_Pause;
-    [SerializeField] private AudioClip m_Unpause;
+    [SerializeField] private AudioClip m_Pause = null;
+    [SerializeField] private AudioClip m_Unpause = null;
     [Space(10)]
-    [SerializeField] private AudioClip m_Note_Success;
-    [SerializeField] private AudioClip m_Note_Miss;
+    [SerializeField] private AudioClip m_Note_Success = null;
+    [SerializeField] private AudioClip m_Note_Miss = null;
 
 
     private static AudioManager instance;

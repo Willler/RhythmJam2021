@@ -2092,9 +2092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa5f8116ad957748996d2775d99ca94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartScreen: 0
-  m_TrackSelection: 0
-  m_Options: 0
 --- !u!1 &859402843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,8 +3560,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 787658292}
-        m_TargetAssemblyTypeName: Start_Screen, Assembly-CSharp
+      - m_Target: {fileID: 2063685905}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -4606,6 +4603,8 @@ MonoBehaviour:
   m_Track2: {fileID: 8300000, guid: 5f83d33a3f4bede4b95e3c3be3281fd0, type: 3}
   m_Track3: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
   m_AllTracks: 00000000
+  m_Timer: 1.5
+  m_CurrentTime: 0
 --- !u!1 &1931804509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,8 +4950,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartScreen: 0
   m_TrackSelection: 0
-  m_Options: 0
+  m_OptionsMenu: 0
+  m_InGame: 0
   m_Pause: 0
+  m_PauseMenu: {fileID: 0}
+  m_GameOverMenu: {fileID: 0}
 --- !u!1 &2078696482
 GameObject:
   m_ObjectHideFlags: 0

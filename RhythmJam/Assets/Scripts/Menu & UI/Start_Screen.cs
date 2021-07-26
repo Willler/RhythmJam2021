@@ -5,11 +5,7 @@ using UnityEngine;
 public class Start_Screen : MonoBehaviour
 {
     Animator m_Start_Screen_Animator;
-
-    [Header("Current Screen")]
-    [SerializeField] private bool m_StartScreen;
-    [SerializeField] private bool m_TrackSelection;
-    [SerializeField] private bool m_Options;
+    GameManager m_GameManager;
 
     private static Start_Screen instance;
 
@@ -39,15 +35,6 @@ public class Start_Screen : MonoBehaviour
     void Start()
     {
         m_Start_Screen_Animator = GetComponent<Animator>();
-        m_StartScreen = true;
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown("escape") && m_StartScreen == false)
-        {
-            Instance.BackIsClicked();
-        }
     }
 
     public void StartIsClicked()
@@ -56,9 +43,9 @@ public class Start_Screen : MonoBehaviour
         m_Start_Screen_Animator.SetBool("BackIsClicked", false);
         m_Start_Screen_Animator.SetBool("OptionIsClicked", false);
 
-        m_StartScreen = false;
-        m_TrackSelection = true;
-        m_Options = false;
+        GameManager.Instance.m_StartScreen = false;
+        GameManager.Instance.m_TrackSelection = true;
+        GameManager.Instance.m_OptionsMenu = false;
     }
 
     public void BackIsClicked()
@@ -67,8 +54,9 @@ public class Start_Screen : MonoBehaviour
         m_Start_Screen_Animator.SetBool("BackIsClicked", true);
         m_Start_Screen_Animator.SetBool("OptionIsClicked", false);
 
-        m_StartScreen = true;
-        m_TrackSelection = false; 
+        GameManager.Instance.m_StartScreen = true;
+        GameManager.Instance.m_TrackSelection = false;
+        GameManager.Instance.m_OptionsMenu = false;
     }
 
     public void OptionsIsClicked()
@@ -77,13 +65,8 @@ public class Start_Screen : MonoBehaviour
         m_Start_Screen_Animator.SetBool("BackIsClicked", false);
         m_Start_Screen_Animator.SetBool("OptionIsClicked", true);
 
-        m_StartScreen = false;
-        m_TrackSelection = false;
-        m_Options = true;
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
+        GameManager.Instance.m_StartScreen = false;
+        GameManager.Instance.m_TrackSelection = false;
+        GameManager.Instance.m_OptionsMenu = true;
     }
 }
