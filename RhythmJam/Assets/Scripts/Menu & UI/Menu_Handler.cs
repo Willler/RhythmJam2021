@@ -30,9 +30,6 @@ public class Menu_Handler : MonoBehaviour
         instance = this;
     }
 
-    [Header("Start Menu")]
-    [SerializeField] private GameObject m_StartMenu = null;
-
     [Header("Pause")]
     [SerializeField] private GameObject m_PauseMenu = null;
     [SerializeField] public static bool m_Paused;
@@ -43,30 +40,9 @@ public class Menu_Handler : MonoBehaviour
     [Header("You Win")]
     [SerializeField] private GameObject m_YouWinMenu = null;
 
-    void Start()
-    {
-        StartMenu();
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (m_Paused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-    }
-
     public void Resume()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        m_StartMenu.SetActive(false);
         m_PauseMenu.SetActive(false);
         Time.timeScale = 1.0f;
         m_Paused = false;
@@ -93,12 +69,6 @@ public class Menu_Handler : MonoBehaviour
         Debug.Log("PLAY AGAIN");
     }
 
-    public void Quit()
-    {
-        Debug.Log("QUIT");
-        Application.Quit();
-    }
-
     public void YouWin()
     {
         Time.timeScale = 0.0f;
@@ -111,15 +81,5 @@ public class Menu_Handler : MonoBehaviour
         Time.timeScale = 0.0f;
         Cursor.lockState = CursorLockMode.None;
         m_GameOverMenu.SetActive(true);
-    }
-
-    public void StartMenu()
-    {
-        Time.timeScale = 0.0f;
-        Cursor.lockState = CursorLockMode.None;
-        m_StartMenu.SetActive(true);
-        m_Paused = true;
-
-        Debug.Log("START");
     }
 }

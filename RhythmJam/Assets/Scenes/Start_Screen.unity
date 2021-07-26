@@ -4602,7 +4602,7 @@ MonoBehaviour:
   m_CurrentTrack: 0
   m_BPM: 0
   m_TitleScreenBGM: {fileID: 8300000, guid: 5a7bd5e9c6d8584439b493b064139b9e, type: 3}
-  m_Track1: {fileID: 8300000, guid: afce6f0ca4d69dd43878a044408bac2f, type: 3}
+  m_Track1: {fileID: 8300000, guid: cdeb0ea0e59c04043bacc50aec79a896, type: 3}
   m_Track2: {fileID: 8300000, guid: 5f83d33a3f4bede4b95e3c3be3281fd0, type: 3}
   m_Track3: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
   m_AllTracks: 00000000
@@ -4949,6 +4949,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd330524d29a9324a81645694d47f311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_StartScreen: 0
+  m_TrackSelection: 0
+  m_Options: 0
+  m_Pause: 0
 --- !u!1 &2078696482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,6 +5258,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1899211466}
+        m_TargetAssemblyTypeName: Jukebox, Assembly-CSharp
+        m_MethodName: PlayTrack
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2110801774

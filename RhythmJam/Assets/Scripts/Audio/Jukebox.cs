@@ -22,6 +22,8 @@ public class Jukebox : MonoBehaviour
     [SerializeField] private bool[] m_AllTracks;            //Bool to check which track is playing.
 
     [Header("Fade In & Out")]
+    [SerializeField] private float m_Timer = 1.5f;
+    [SerializeField] private float m_CurrentTime;
 
     private static Jukebox instance;
 
@@ -57,6 +59,7 @@ public class Jukebox : MonoBehaviour
     void Start()
     {
         Instance.PlayTrack(0);
+        m_CurrentTime = m_Timer;
     }
 
     void Update()
@@ -84,7 +87,7 @@ public class Jukebox : MonoBehaviour
         }
     }
 
-    void PlayTrack(int Track)
+    public void PlayTrack(int Track)
     {
         if (Track == 0)
         {
@@ -94,7 +97,7 @@ public class Jukebox : MonoBehaviour
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 0;
 
-            Debug.Log("This is the Title Screen BGM.");
+            m_Output.PlayDelayed(0.5f);
         }
         else if (Track == 1 && m_CurrentTrack != 1)
         {
@@ -104,7 +107,8 @@ public class Jukebox : MonoBehaviour
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 120;        //Change to whatever the actual BPM is once we get to it.
 
-            Debug.Log("This is Track 1.");
+            gameObject.GetComponent<AudioSource>().volume = 0.3f;   //Temporary to no kill our ears while testing. The final songs and SFX should be mixed properly.
+            m_Output.PlayDelayed(2.0f);                             //Might substitute the delay with Play() when the real songs are in (with countdown).
         }
         else if (Track == 2 && m_CurrentTrack != 2)
         {
@@ -114,7 +118,7 @@ public class Jukebox : MonoBehaviour
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 140;        //Change to whatever the actual BPM is once we get to it.
 
-            Debug.Log("This is Track 2.");
+            m_Output.PlayDelayed(2.0f);
         }
         else if (Track == 3 && m_CurrentTrack != 3)
         {
@@ -124,11 +128,11 @@ public class Jukebox : MonoBehaviour
             m_AllTracks[m_CurrentTrack] = true;
             m_BPM = 160;        //Change to whatever the actual BPM is once we get to it.
 
-            Debug.Log("This is Track 3.");
+            m_Output.PlayDelayed(2.0f);
         }
 
         m_TrackIsPlaying = true;
-        m_Output.Play();
+
     }
 
     void StopTrack()
@@ -155,5 +159,10 @@ public class Jukebox : MonoBehaviour
         }
 
         m_Output.Stop();
+    }
+
+    void FadeOut()
+    {
+
     }
 }
