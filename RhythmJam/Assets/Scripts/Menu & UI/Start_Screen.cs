@@ -54,15 +54,18 @@ public class Start_Screen : MonoBehaviour
     {
         m_Start_Screen_Animator.SetBool("StartIsClicked", true);
         m_Start_Screen_Animator.SetBool("BackIsClicked", false);
+        m_Start_Screen_Animator.SetBool("OptionIsClicked", false);
 
         m_StartScreen = false;
         m_TrackSelection = true;
+        m_Options = false;
     }
 
     public void BackIsClicked()
     {
         m_Start_Screen_Animator.SetBool("StartIsClicked", false);
         m_Start_Screen_Animator.SetBool("BackIsClicked", true);
+        m_Start_Screen_Animator.SetBool("OptionIsClicked", false);
 
         m_StartScreen = true;
         m_TrackSelection = false; 
@@ -70,6 +73,17 @@ public class Start_Screen : MonoBehaviour
 
     public void OptionsIsClicked()
     {
+        m_Start_Screen_Animator.SetBool("StartIsClicked", false);
+        m_Start_Screen_Animator.SetBool("BackIsClicked", false);
+        m_Start_Screen_Animator.SetBool("OptionIsClicked", true);
 
+        m_StartScreen = false;
+        m_TrackSelection = false;
+        m_Options = true;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
