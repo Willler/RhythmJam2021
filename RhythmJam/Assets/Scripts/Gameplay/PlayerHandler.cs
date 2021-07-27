@@ -48,7 +48,7 @@ public class PlayerHandler : MonoBehaviour
       
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.position = new Vector3(-3.4f, -4f, 0f);
+                transform.position = new Vector3(-3.4f, -3.4f, 0f);
 
                 //Vector3 leftMovement;
                 //leftMovement = gameObject.transform.position;
@@ -58,7 +58,7 @@ public class PlayerHandler : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            transform.position = new Vector3(0, -4f, 0f);
+            transform.position = new Vector3(0, -3.4f, 0f);
 
             //Vector3 leftMovement;
             //leftMovement = gameObject.transform.position;
@@ -68,7 +68,7 @@ public class PlayerHandler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.position = new Vector3(3.4f, -4f, 0f);
+            transform.position = new Vector3(3.4f, -3.4f, 0f);
 
             //Vector3 leftMovement;
             //leftMovement = gameObject.transform.position;
@@ -78,7 +78,7 @@ public class PlayerHandler : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            transform.position = new Vector3(0, -4f, 0f);
+            transform.position = new Vector3(0, -3.4f, 0f);
 
             //Vector3 leftMovement;
             //leftMovement = gameObject.transform.position;

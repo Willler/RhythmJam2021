@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8517838213737534654}
   - component: {fileID: 8517838213737534650}
-  - component: {fileID: 8517838213737534653}
   - component: {fileID: 8517838213737534652}
+  - component: {fileID: 8517838213737534653}
   - component: {fileID: 8517838213737534655}
+  - component: {fileID: 5953049558426535390}
   m_Layer: 0
-  m_Name: Note (4)
+  m_Name: NotePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8517838213737534641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.51748085, z: 0}
-  m_LocalScale: {x: 6.7009797, y: 0.05667917, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 1551145451
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b546eb6cd80c648419f7dc383a6f42b7, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.94356203, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 566b87aff7db48d4f9a7613eccd96651, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -85,22 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8517838213737534653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517838213737534641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40bed521f93e42942998311714c13ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setTempo: 120
-  gameStarted: 0
-  HighwayController: {fileID: 0}
-  angled: 0
 --- !u!58 &8517838213737534652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117,6 +102,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.56
+--- !u!114 &8517838213737534653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517838213737534641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bed521f93e42942998311714c13ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setTempo: 120
+  gameStarted: 0
+  HighwayController: {fileID: 0}
+  enlargeNote: {fileID: 5953049558426535390}
+  angled: 0
 --- !u!114 &8517838213737534655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,3 +135,22 @@ MonoBehaviour:
   canBePressedLeft: 0
   canBePressedRight: 0
   keyToPress: 32
+--- !u!95 &5953049558426535390
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517838213737534641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf7e1c417bcfd06408ced6551e9e927f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
