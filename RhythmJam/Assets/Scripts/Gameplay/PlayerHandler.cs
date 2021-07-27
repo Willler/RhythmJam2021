@@ -120,10 +120,10 @@ public class PlayerHandler : MonoBehaviour
             
             GameManagerLevels.currentScore -= 100;
             Debug.Log(GameManagerLevels.currentScore);
-            scoreText.text = "Score: " + GameManagerLevels.currentScore;
+            scoreText.text = "" + GameManagerLevels.currentScore;
             GameManagerLevels.currentMultiplier = 1;
             GameManagerLevels.multiplierTracker = 0;
-            multiplierText.text = "Multi: " + GameManagerLevels.currentMultiplier;
+            multiplierText.text = "" + GameManagerLevels.currentMultiplier;
 
             //play sound of impact here
             Destroy(other.gameObject);

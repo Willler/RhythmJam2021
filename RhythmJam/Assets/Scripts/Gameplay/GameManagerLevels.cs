@@ -35,7 +35,7 @@ public class GameManagerLevels : MonoBehaviour
     {
         instance = this;
 
-        scoreText.text = "Score: 0";
+        scoreText.text = "000";
         currentMultiplier = 1;
     }
 
@@ -72,10 +72,10 @@ public class GameManagerLevels : MonoBehaviour
             }
         }
 
-        multiText.text = "Multi: " + currentMultiplier;
+        multiText.text = currentMultiplier + "x";
 
         currentScore = currentScore + scorePerNote * currentMultiplier;
-        scoreText.text = "Score: " + currentScore;
+        scoreText.text = "" + currentScore;
     }
 
     public void noteMissed()
