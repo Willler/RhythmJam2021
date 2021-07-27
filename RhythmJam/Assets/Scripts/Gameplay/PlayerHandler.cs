@@ -123,7 +123,7 @@ public class PlayerHandler : MonoBehaviour
             scoreText.text = "" + GameManagerLevels.currentScore;
             GameManagerLevels.currentMultiplier = 1;
             GameManagerLevels.multiplierTracker = 0;
-            multiplierText.text = "" + GameManagerLevels.currentMultiplier;
+            multiplierText.text = GameManagerLevels.currentMultiplier + "x";
 
             //play sound of impact here
             Destroy(other.gameObject);

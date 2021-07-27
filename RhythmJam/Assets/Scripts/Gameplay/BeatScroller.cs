@@ -8,9 +8,9 @@ public class BeatScroller : MonoBehaviour
     public float setTempo;
 
     public bool gameStarted;
-    public GameObject HighwayController;
+    
 
-    [SerializeField] private Animator enlargeNote;
+    [SerializeField] private Animator enlargeNoteAnimation;
 
     public float angled;
     // Start is called before the first frame update
@@ -48,7 +48,7 @@ public class BeatScroller : MonoBehaviour
     {
         if (other.CompareTag("Enlarger"))
         {
-            enlargeNote.SetBool("enlargeTrigger", true);
+            enlargeNoteAnimation.SetBool("enlargeTrigger", true);
         }
     }
 }

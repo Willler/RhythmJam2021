@@ -20,6 +20,8 @@ public class GameManagerLevels : MonoBehaviour
     //numerical score variables
     public static int currentScore;
     public int scorePerNote = 100;
+    public int scorePerGoodNote = 125;
+    public int scorePerPerfectNote = 150;
 
     //UI Text Elements
     public Text scoreText;
@@ -74,12 +76,31 @@ public class GameManagerLevels : MonoBehaviour
 
         multiText.text = currentMultiplier + "x";
 
-        currentScore = currentScore + scorePerNote * currentMultiplier;
+        //currentScore = currentScore + scorePerNote * currentMultiplier;
         scoreText.text = "" + currentScore;
     }
 
+    public void NormalHit()
+    {
+        currentScore += scorePerNote * currentMultiplier;
+        noteHit();
+    }
+
+    public void GoodHit()
+    {
+        currentScore += scorePerGoodNote * currentMultiplier;
+        noteHit();
+    }
+
+    public void PerfectHit()
+    {
+        currentScore += scorePerPerfectNote * currentMultiplier;
+        noteHit();
+    }
+
+
     public void noteMissed()
     {
-        Debug.Log("Miss");
+        //Debug.Log("Miss");
     }
 }

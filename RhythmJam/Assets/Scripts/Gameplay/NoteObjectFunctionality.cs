@@ -8,7 +8,10 @@ public class NoteObjectFunctionality : MonoBehaviour
     public bool canBePressedLeft;
     public bool canBePressedRight;
 
+
     public KeyCode keyToPress;
+
+    public GameObject noteHitEffect;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,26 @@ public class NoteObjectFunctionality : MonoBehaviour
                 if (canBePressedLeft)
                 {
                     gameObject.SetActive(false);
-                    GameManagerLevels.instance.noteHit();
+
+                    if (this.transform.position.y >= -3)
+                    {
+                        Debug.Log("Normal Hit");
+                        GameManagerLevels.instance.NormalHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else if (this.transform.position.y >= -3.2)
+                    {
+                        Debug.Log("Good Hit");
+                        GameManagerLevels.instance.GoodHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else
+                    {
+                        Debug.Log("Perfect Hit");
+                        GameManagerLevels.instance.PerfectHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+
                 }
             }
         } else if (PlayerHandler.isOnRightLane)
@@ -40,8 +62,25 @@ public class NoteObjectFunctionality : MonoBehaviour
                 if (canBePressedRight)
                 {
                     gameObject.SetActive(false);
-                    GameManagerLevels.instance.noteHit();
-                    
+                    if (this.transform.position.y >= -3)
+                    {
+                        Debug.Log("Normal Hit");
+                        GameManagerLevels.instance.NormalHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else if (this.transform.position.y >= -3.2)
+                    {
+                        Debug.Log("Good Hit");
+                        GameManagerLevels.instance.GoodHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else
+                    {
+                        Debug.Log("Perfect Hit");
+                        GameManagerLevels.instance.PerfectHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+
                 }
             }
         } else
@@ -53,7 +92,24 @@ public class NoteObjectFunctionality : MonoBehaviour
                 if (canBePressed)
                 {
                     gameObject.SetActive(false);
-                    GameManagerLevels.instance.noteHit();
+                    if (this.transform.position.y >= -3)
+                    {
+                        Debug.Log("Normal Hit");
+                        GameManagerLevels.instance.NormalHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else if (this.transform.position.y >= -3.2)
+                    {
+                        Debug.Log("Good Hit");
+                        GameManagerLevels.instance.GoodHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
+                    else
+                    {
+                        Debug.Log("Perfect Hit");
+                        GameManagerLevels.instance.PerfectHit();
+                        Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                    }
                 }
             }
         }
