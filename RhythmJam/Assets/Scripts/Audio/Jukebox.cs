@@ -135,7 +135,7 @@ public class Jukebox : MonoBehaviour
 
     }
 
-    void StopTrack()
+    public void StopTrack()
     {
         if (m_CurrentTrack == 0)
         {
