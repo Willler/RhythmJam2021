@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -6286289131892939654}
   m_Layer: 0
   m_Name: NotePrefab
-  m_TagString: Untagged
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,6 @@ MonoBehaviour:
   canBePressedRight: 0
   keyToPress: 32
   noteHitEffect: {fileID: 9033940153632374123, guid: 660537616157324469b2794d4f9f566b, type: 3}
-  centerClapper: {fileID: 5084988529962660638, guid: 294a2eacf2d4a704e910aeefc44be8e9, type: 3}
 --- !u!95 &5953049558426535390
 Animator:
   serializedVersion: 3

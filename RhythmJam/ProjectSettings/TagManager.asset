@@ -15,6 +15,7 @@ TagManager:
   - Enlarger
   - Enemy
   - MissedBox
+  - Note
   layers:
   - Default
   - TransparentFX

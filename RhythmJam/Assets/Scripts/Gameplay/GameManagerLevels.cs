@@ -35,6 +35,11 @@ public class GameManagerLevels : MonoBehaviour
     private float imageClarity = 0;
 
 
+    public GameObject normalNoteLight;
+    public GameObject goodNoteLight;
+    public GameObject perfectNoteLight;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +65,7 @@ public class GameManagerLevels : MonoBehaviour
 
             }
         }
+
     }
 
     public void noteHit()
@@ -90,19 +96,25 @@ public class GameManagerLevels : MonoBehaviour
     public void NormalHit()
     {
         currentScore += scorePerNote * currentMultiplier;
+        StartCoroutine(normalNote());
         noteHit();
+        
     }
 
     public void GoodHit()
     {
         currentScore += scorePerGoodNote * currentMultiplier;
+        StartCoroutine(goodNote());
         noteHit();
+        
     }
 
     public void PerfectHit()
     {
         currentScore += scorePerPerfectNote * currentMultiplier;
+        StartCoroutine(PerfectNote());
         noteHit();
+        
     }
 
 
@@ -110,5 +122,26 @@ public class GameManagerLevels : MonoBehaviour
     {
         //Debug.Log("Miss");
 
+    }
+
+    IEnumerator normalNote()
+    {
+        normalNoteLight.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        normalNoteLight.SetActive(false);
+    }
+
+    IEnumerator goodNote()
+    {
+        goodNoteLight.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        goodNoteLight.SetActive(false);
+    }
+
+    IEnumerator PerfectNote()
+    {
+        perfectNoteLight.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        perfectNoteLight.SetActive(false);
     }
 }

@@ -15,7 +15,6 @@ public class NoteObjectFunctionality : MonoBehaviour
 
     public static bool centerClap;
 
-   
     
     // Start is called before the first frame update
     void Start()
@@ -146,8 +145,9 @@ public class NoteObjectFunctionality : MonoBehaviour
         if (other.CompareTag("MissedBox"))
         {
             canBePressed = false;
+            
             //GameManagerLevels.instance.noteMissed();
-            Destroy(gameObject);
+            Destroy(gameObject, 0.5f);
         }
     }
 
