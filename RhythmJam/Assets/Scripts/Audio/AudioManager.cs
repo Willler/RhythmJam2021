@@ -12,7 +12,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("SFX Audio Clips")]
     [SerializeField] private AudioClip m_Button_Hover = null;
-    [SerializeField] private AudioClip m_Button_Click = null;
+    [SerializeField] private AudioClip m_Button_Select= null;
+    [SerializeField] private AudioClip m_Button_Back = null;
     [Space(10)]
     [SerializeField] private AudioClip m_Pause = null;
     [SerializeField] private AudioClip m_Unpause = null;
@@ -46,19 +47,6 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    private void Update()
-    {
-        //DEBUG INPUT - REMOVE AFTER SUCCESSFUL TESTS
-        if (Input.GetKeyDown("7"))
-        {
-            PlaySFX(0);
-        }
-        else if (Input.GetKeyDown("8"))
-        {
-            PlaySFX(1);
-        }
-    }
-
     public void MasterVol(float MasterSlider)
     {
         m_MasterMixer.SetFloat("m_MasterVol", Mathf.Log10(MasterSlider) * 20);
@@ -74,17 +62,22 @@ public class AudioManager : MonoBehaviour
         m_MasterMixer.SetFloat("m_SFXVol", Mathf.Log10(SFXSlider) * 20);
     }
 
-    public void PlaySFX(int SFX)
+    public void SFX_Button(string Action)
     {
-        if(SFX == 0)
+        if(Action == "Hover")
         {
-            gameObject.GetComponent<AudioSource>().clip = m_Button_Hover;
+            //gameObject.GetComponent<AudioSource>().clip = m_Button_Hover;
+            m_Output.PlayOneShot(m_Button_Hover);
         }
-        else if(SFX == 1)
+        else if(Action == "Select")
         {
-            gameObject.GetComponent<AudioSource>().clip = m_Button_Click;
+            m_Output.PlayOneShot(m_Button_Select);
+        }
+        else if(Action == "Back")
+        {
+            m_Output.PlayOneShot(m_Button_Back);
         }
 
-        m_Output.Play();
+        //m_Output.PlayOneShot(m_Button_Hover);
     }
 }
