@@ -20,8 +20,8 @@ public class GameManagerLevels : MonoBehaviour
     //numerical score variables
     public static int currentScore;
     public int scorePerNote = 100;
-    public int scorePerGoodNote = 125;
-    public int scorePerPerfectNote = 150;
+    public int scorePerGoodNote = 150;
+    public int scorePerPerfectNote = 200;
 
     //UI Text Elements
     public Text scoreText;
@@ -123,6 +123,8 @@ public class GameManagerLevels : MonoBehaviour
         //Debug.Log("Miss");
 
     }
+
+    ///Play Note Hit Sound Effects below
 
     IEnumerator normalNote()
     {
