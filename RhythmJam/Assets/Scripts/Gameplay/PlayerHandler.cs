@@ -33,10 +33,37 @@ public class PlayerHandler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.DownArrow) && Input.GetKey(KeyCode.Space))
         {
-            PlayerAnimator.SetBool("CenterClapBool", true);
+            if (isOnCenterLane)
+            {
+                PlayerAnimator.SetBool("CenterClapBool", true);
+            }
         } else
         {
             PlayerAnimator.SetBool("CenterClapBool", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.LeftArrow) && Input.GetKey(KeyCode.Space))
+        {
+            if (isOnLeftLane || isOnCenterLane)
+            {
+                PlayerAnimator.SetBool("LeftClapBool", true);
+            }
+        }
+        else
+        {
+            PlayerAnimator.SetBool("LeftClapBool", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.RightArrow) && Input.GetKey(KeyCode.Space))
+        {
+            if (isOnRightLane || isOnCenterLane)
+            {
+                PlayerAnimator.SetBool("RightClapBool", true);
+            }
+        }
+        else
+        {
+            PlayerAnimator.SetBool("RightClapBool", false);
         }
 
 
