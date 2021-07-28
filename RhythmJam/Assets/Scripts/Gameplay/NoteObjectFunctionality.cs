@@ -12,6 +12,8 @@ public class NoteObjectFunctionality : MonoBehaviour
     public KeyCode keyToPress;
 
     public GameObject noteHitEffect;
+
+    public static bool centerClap;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,8 @@ public class NoteObjectFunctionality : MonoBehaviour
                 if (canBePressedLeft)
                 {
                     gameObject.SetActive(false);
-
+                    
+                    
                     if (this.transform.position.y >= -3)
                     {
                         Debug.Log("Normal Hit");
@@ -91,24 +94,30 @@ public class NoteObjectFunctionality : MonoBehaviour
                 
                 if (canBePressed)
                 {
+                    StartCoroutine("CenterClapRoutine");
                     gameObject.SetActive(false);
+                    
                     if (this.transform.position.y >= -3)
                     {
                         Debug.Log("Normal Hit");
                         GameManagerLevels.instance.NormalHit();
                         Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                        
+                      
                     }
                     else if (this.transform.position.y >= -3.2)
                     {
                         Debug.Log("Good Hit");
                         GameManagerLevels.instance.GoodHit();
                         Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                        
                     }
                     else
                     {
                         Debug.Log("Perfect Hit");
                         GameManagerLevels.instance.PerfectHit();
                         Instantiate(noteHitEffect, transform.position, noteHitEffect.transform.rotation);
+                        
                     }
                 }
             }
@@ -131,14 +140,30 @@ public class NoteObjectFunctionality : MonoBehaviour
             }
             
         }
+
+        if (other.CompareTag("MissedBox"))
+        {
+            canBePressed = false;
+            //GameManagerLevels.instance.noteMissed();
+            Destroy(gameObject);
+        }
+    }
+
+    IEnumerator CenterClapRoutine()
+    {
+        centerClap = true;
+        yield return new WaitForSeconds(0.1f);
+        
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            canBePressed = false;
-            GameManagerLevels.instance.noteMissed();
-        }
+        //if (other.tag == "Player")
+        //{
+        //    canBePressed = false;
+        //    GameManagerLevels.instance.noteMissed();
+        //}
     }
+
+
 }

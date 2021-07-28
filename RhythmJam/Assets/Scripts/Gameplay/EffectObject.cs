@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EffectObject : MonoBehaviour
 {
-    public float lifetime = 0.5f;
+    public float lifetime = 0.25f;
 
 
     void Start()

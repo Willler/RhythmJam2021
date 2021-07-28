@@ -14,6 +14,8 @@ public class PlayerHandler : MonoBehaviour
 
     public Text scoreText;
     public Text multiplierText;
+
+    [SerializeField] private Animator PlayerAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,20 @@ public class PlayerHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (NoteObjectFunctionality.centerClap == true)
+        //{
+        //    StartCoroutine("playAndResetCenter");
+
+        //}
+
+        if (Input.GetKeyDown(KeyCode.Space) && Input.GetKey(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.DownArrow) && Input.GetKey(KeyCode.Space))
+        {
+            PlayerAnimator.SetBool("CenterClapBool", true);
+        } else
+        {
+            PlayerAnimator.SetBool("CenterClapBool", false);
+        }
+
 
         if (this.transform.position.x == 0f)
         {
@@ -112,6 +128,14 @@ public class PlayerHandler : MonoBehaviour
 
 
     }
+
+    //IEnumerator playAndResetCenter()
+    //{
+    //    PlayerAnimator.SetTrigger("ClapTrigger");
+    //    yield return new WaitForSeconds(0.5f);
+        
+    //    NoteObjectFunctionality.centerClap = true;
+    //}
      
     private void OnTriggerEnter2D(Collider2D other)
     {
