@@ -14,6 +14,8 @@ public class NoteObjectFunctionality : MonoBehaviour
     public GameObject noteHitEffect;
 
     public static bool centerClap;
+
+   
     
     // Start is called before the first frame update
     void Start()

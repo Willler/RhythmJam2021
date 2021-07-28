@@ -31,6 +31,9 @@ public class GameManagerLevels : MonoBehaviour
     public static int currentMultiplier;
     public int[] multiplierThreshold;
 
+    public SpriteRenderer romanImage;
+    private float imageClarity = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +81,10 @@ public class GameManagerLevels : MonoBehaviour
 
         //currentScore = currentScore + scorePerNote * currentMultiplier;
         scoreText.text = "" + currentScore;
+
+        imageClarity += 0.01f;
+        romanImage.color = new Color(255f, 255f, 255f, imageClarity);
+         
     }
 
     public void NormalHit()
