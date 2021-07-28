@@ -61,7 +61,7 @@ public class GameManagerLevels : MonoBehaviour
 
     public void noteHit()
     {
-        Debug.Log("Hit");
+        
 
         if (currentMultiplier - 1 < multiplierThreshold.Length)
         {
