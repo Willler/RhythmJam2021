@@ -93,6 +93,8 @@ public class GameManagerLevels : MonoBehaviour
          
     }
 
+    ///You can add the sound effects here
+
     public void NormalHit()
     {
         currentScore += scorePerNote * currentMultiplier;
@@ -117,14 +119,14 @@ public class GameManagerLevels : MonoBehaviour
         
     }
 
-
+    ///This doesn't do anything anymore
     public void noteMissed()
     {
         //Debug.Log("Miss");
 
     }
 
-    ///Play Note Hit Sound Effects below
+    
 
     IEnumerator normalNote()
     {
