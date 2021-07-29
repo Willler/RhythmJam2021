@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Track2: {fileID: 8300000, guid: 5f83d33a3f4bede4b95e3c3be3281fd0, type: 3}
   m_Track3: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
   m_AllTracks: 00000000
+  m_Timer: 1.5
+  m_CurrentTime: 0
 --- !u!82 &102423123
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1728,11 +1730,14 @@ MonoBehaviour:
   m_MasterMixer: {fileID: 24100000, guid: 0dbacb6182de9b64ca016d06ba8ae370, type: 2}
   m_Output: {fileID: 1771196420}
   m_Button_Hover: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
-  m_Button_Click: {fileID: 8300000, guid: 5f83d33a3f4bede4b95e3c3be3281fd0, type: 3}
+  m_Button_Select: {fileID: 0}
+  m_Button_Back: {fileID: 0}
   m_Pause: {fileID: 0}
   m_Unpause: {fileID: 0}
-  m_Note_Success: {fileID: 0}
-  m_Note_Miss: {fileID: 0}
+  m_Note_Perfect: {fileID: 8300000, guid: 831c7f7856a0d0245a8edb103ce29466, type: 3}
+  m_Note_Good: {fileID: 8300000, guid: f7eff80d04d8f674fb9ac44eeef77198, type: 3}
+  m_Note_Bad: {fileID: 8300000, guid: 842b219d0d8991f49a2ec6241fa5e2ba, type: 3}
+  m_Note_Miss: {fileID: 8300000, guid: 50ca79fa94636c24b9e1b13b38332711, type: 3}
 --- !u!82 &1771196420
 AudioSource:
   m_ObjectHideFlags: 0

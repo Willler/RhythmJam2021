@@ -3,7 +3,18 @@ guid: f5d99bff46d8f944e89f7e0389c6afa9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_MasterMixer: {instanceID: 0}
+  - m_Output: {instanceID: 0}
+  - m_Button_Hover: {fileID: 8300000, guid: cb342e58c79aa7045a72471d49c127ca, type: 3}
+  - m_Button_Select: {fileID: 8300000, guid: 86515e65ade252440a1d9d8c2eb5e10c, type: 3}
+  - m_Button_Back: {instanceID: 0}
+  - m_Pause: {instanceID: 0}
+  - m_Unpause: {instanceID: 0}
+  - m_Note_Perfect: {fileID: 8300000, guid: 831c7f7856a0d0245a8edb103ce29466, type: 3}
+  - m_Note_Good: {fileID: 8300000, guid: f7eff80d04d8f674fb9ac44eeef77198, type: 3}
+  - m_Note_Bad: {fileID: 8300000, guid: 842b219d0d8991f49a2ec6241fa5e2ba, type: 3}
+  - m_Note_Miss: {fileID: 8300000, guid: 50ca79fa94636c24b9e1b13b38332711, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
