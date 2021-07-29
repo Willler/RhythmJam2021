@@ -145,8 +145,8 @@ public class NoteObjectFunctionality : MonoBehaviour
         if (other.CompareTag("MissedBox"))
         {
             canBePressed = false;
-            
-            
+
+            AudioManager.Instance.SFX_Note(0);
             Destroy(gameObject, 2f);
         }
     }
