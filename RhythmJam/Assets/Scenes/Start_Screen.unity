@@ -5192,8 +5192,8 @@ MonoBehaviour:
   m_BPM: 0
   m_TitleScreenBGM: {fileID: 8300000, guid: ad448dc5e4d2e82459206a64fe5fb37f, type: 3}
   m_Track1: {fileID: 8300000, guid: ad448dc5e4d2e82459206a64fe5fb37f, type: 3}
-  m_Track2: {fileID: 8300000, guid: 6d310b75efb99054d8d8d0f4ffe5001b, type: 3}
-  m_Track3: {fileID: 8300000, guid: 9412bfcc0dcfc2649990f9b3843a8498, type: 3}
+  m_Track2: {fileID: 8300000, guid: c3a7143ac6ac7ca49a06b3d2ebcbdd9f, type: 3}
+  m_Track3: {fileID: 8300000, guid: 539482f40790cfd46970fbbbcb022f21, type: 3}
   m_AllTracks: 00000000
   m_Timer: 1.5
   m_CurrentTime: 0
