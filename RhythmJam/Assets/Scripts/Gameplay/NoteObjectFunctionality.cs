@@ -146,8 +146,8 @@ public class NoteObjectFunctionality : MonoBehaviour
         {
             canBePressed = false;
             
-            //GameManagerLevels.instance.noteMissed();
-            Destroy(gameObject, 0.5f);
+            
+            Destroy(gameObject, 2f);
         }
     }
 
