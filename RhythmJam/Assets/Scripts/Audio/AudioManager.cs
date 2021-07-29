@@ -18,7 +18,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip m_Pause = null;
     [SerializeField] private AudioClip m_Unpause = null;
     [Space(10)]
-    [SerializeField] private AudioClip m_Note_Success = null;
+    [SerializeField] private AudioClip m_Note_Perfect = null;
+    [SerializeField] private AudioClip m_Note_Good = null;
+    [SerializeField] private AudioClip m_Note_Bad = null;
     [SerializeField] private AudioClip m_Note_Miss = null;
 
 
@@ -66,7 +68,6 @@ public class AudioManager : MonoBehaviour
     {
         if(Action == "Hover")
         {
-            //gameObject.GetComponent<AudioSource>().clip = m_Button_Hover;
             m_Output.PlayOneShot(m_Button_Hover);
         }
         else if(Action == "Select")
@@ -77,7 +78,25 @@ public class AudioManager : MonoBehaviour
         {
             m_Output.PlayOneShot(m_Button_Back);
         }
+    }
 
-        //m_Output.PlayOneShot(m_Button_Hover);
+    public void SFX_Note(int Accuracy)
+    {
+        if(Accuracy == 3)
+        {
+            m_Output.PlayOneShot(m_Note_Perfect);
+        }
+        else if(Accuracy == 2)
+        {
+            m_Output.PlayOneShot(m_Note_Good);
+        }
+        else if(Accuracy == 1)
+        {
+            m_Output.PlayOneShot(m_Note_Bad);
+        }
+        else if (Accuracy == 0)
+        {
+            m_Output.PlayOneShot(m_Note_Miss);
+        }
     }
 }
