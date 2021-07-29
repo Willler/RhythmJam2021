@@ -100,7 +100,8 @@ public class GameManagerLevels : MonoBehaviour
         currentScore += scorePerNote * currentMultiplier;
         StartCoroutine(normalNote());
         noteHit();
-        
+
+        AudioManager.Instance.SFX_Note(1);
     }
 
     public void GoodHit()
@@ -108,7 +109,8 @@ public class GameManagerLevels : MonoBehaviour
         currentScore += scorePerGoodNote * currentMultiplier;
         StartCoroutine(goodNote());
         noteHit();
-        
+
+        AudioManager.Instance.SFX_Note(2);
     }
 
     public void PerfectHit()
@@ -116,7 +118,8 @@ public class GameManagerLevels : MonoBehaviour
         currentScore += scorePerPerfectNote * currentMultiplier;
         StartCoroutine(PerfectNote());
         noteHit();
-        
+
+        AudioManager.Instance.SFX_Note(3);
     }
 
     ///This doesn't do anything anymore
