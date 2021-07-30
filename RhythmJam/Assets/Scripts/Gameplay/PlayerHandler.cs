@@ -180,7 +180,9 @@ public class PlayerHandler : MonoBehaviour
             Destroy(other.gameObject);
 
         }
+        else if(other.tag == "Return")
+        {
+            GameManager.Instance.LoadScene("Start_Screen");
+        }
     }
-
- 
 }

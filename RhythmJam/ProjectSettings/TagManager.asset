@@ -16,6 +16,7 @@ TagManager:
   - Enemy
   - MissedBox
   - Note
+  - Return
   layers:
   - Default
   - TransparentFX
