@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
       value: 
@@ -691,7 +695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &337709573
 Transform:
   m_ObjectHideFlags: 0
@@ -725,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &344314788
 Transform:
   m_ObjectHideFlags: 0
@@ -908,7 +912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &502731922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -984,6 +988,10 @@ PrefabInstance:
     - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: m_Name
       value: Note (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
@@ -1259,7 +1267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &578036212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1341,7 +1349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &596710252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1639,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightLane (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4089794700784661454, guid: 62e323497d029e949824725dfd989a31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e323497d029e949824725dfd989a31, type: 3}
 --- !u!1 &727049852
@@ -1904,7 +1916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &989752967
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2250,6 +2262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
       value: 
@@ -2340,7 +2356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1353200103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2462,6 +2478,10 @@ PrefabInstance:
     - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: m_Name
       value: Note (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
@@ -2817,7 +2837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1600121333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2969,6 +2989,10 @@ PrefabInstance:
     - target: {fileID: 5841556381544622894, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
       propertyPath: m_Name
       value: LeftLane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841556381544622894, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5841556381544622895, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
       propertyPath: m_Color.r
@@ -3209,6 +3233,10 @@ PrefabInstance:
     - target: {fileID: 842491025924752495, guid: dec3c6c8a016a1b48bb3256def69baf1, type: 3}
       propertyPath: m_Name
       value: Centerlane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 842491025924752495, guid: dec3c6c8a016a1b48bb3256def69baf1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec3c6c8a016a1b48bb3256def69baf1, type: 3}
@@ -3461,6 +3489,10 @@ PrefabInstance:
     - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: m_Name
       value: Note (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
@@ -3772,6 +3804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Multiplier Placard
       objectReference: {fileID: 0}
+    - target: {fileID: 370414955162213323, guid: cbd5360b480261c48a557ea39bad1199, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbd5360b480261c48a557ea39bad1199, type: 3}
 --- !u!1001 &842491025901873043
@@ -3853,6 +3889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Centerlane
       objectReference: {fileID: 0}
+    - target: {fileID: 842491025924752495, guid: dec3c6c8a016a1b48bb3256def69baf1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec3c6c8a016a1b48bb3256def69baf1, type: 3}
 --- !u!1001 &891026712271407938
@@ -3922,6 +3962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScorePlacard
       objectReference: {fileID: 0}
+    - target: {fileID: 891026710718981774, guid: 6fb3153dabd85b04c84970c631f650de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 891026710718981775, guid: 6fb3153dabd85b04c84970c631f650de, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -3954,6 +3998,10 @@ PrefabInstance:
     - target: {fileID: 2058824409504290964, guid: 334664388c32c214db25ac74a8883be7, type: 3}
       propertyPath: m_Name
       value: EnlargeTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2058824409504290964, guid: 334664388c32c214db25ac74a8883be7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2058824409504290965, guid: 334664388c32c214db25ac74a8883be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4060,6 +4108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissedNoteBox
       objectReference: {fileID: 0}
+    - target: {fileID: 2098556243760532959, guid: 34c0e07e18ed03f4698ccc4997478626, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34c0e07e18ed03f4698ccc4997478626, type: 3}
 --- !u!1001 &2240096135622655142
@@ -4161,6 +4213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager Levels
       objectReference: {fileID: 0}
+    - target: {fileID: 2240096135273768339, guid: 4c0689d0e6a53574b9d7ad5a47513add, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c0689d0e6a53574b9d7ad5a47513add, type: 3}
 --- !u!1001 &2633916063397131578
@@ -4176,7 +4232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.11
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4213,6 +4269,30 @@ PrefabInstance:
     - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9812
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.9812
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004400, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.9812
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004403, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004403, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633916063706004403, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.6595664
       objectReference: {fileID: 0}
     - target: {fileID: 2633916063706004413, guid: 9f43ed325a90e284dadcfedb8ebf4006, type: 3}
       propertyPath: m_Name
@@ -4299,6 +4379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightLane
       objectReference: {fileID: 0}
+    - target: {fileID: 4089794700784661454, guid: 62e323497d029e949824725dfd989a31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e323497d029e949824725dfd989a31, type: 3}
 --- !u!1001 &4370687443180806991
@@ -4364,6 +4448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4370687443478595962, guid: b4343f3e94651ee49a02b6865cb19a3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4343f3e94651ee49a02b6865cb19a3d, type: 3}
 --- !u!1001 &5068354810825772056
@@ -4376,6 +4464,10 @@ PrefabInstance:
     - target: {fileID: 5068354810443502601, guid: 46081d8fe7c56fc46bb33a2b3be650bb, type: 3}
       propertyPath: m_Name
       value: LightsHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068354810443502601, guid: 46081d8fe7c56fc46bb33a2b3be650bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5068354810443502602, guid: 46081d8fe7c56fc46bb33a2b3be650bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4446,6 +4538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5084988529962660609, guid: 294a2eacf2d4a704e910aeefc44be8e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5084988529962660610, guid: 294a2eacf2d4a704e910aeefc44be8e9, type: 3}
       propertyPath: m_Radius
       value: 3
@@ -4513,7 +4609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1200220943691942258, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 1200220943691942258, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4551,6 +4647,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942258, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942258, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942258, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942259, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942259, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200220943691942259, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.7327335
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b2c157975b1d9c42988e3bf188c19c7, type: 3}
 --- !u!1001 &5841556382305515728
@@ -4563,6 +4683,10 @@ PrefabInstance:
     - target: {fileID: 5841556381544622894, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
       propertyPath: m_Name
       value: LeftLane
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841556381544622894, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5841556381544622895, guid: 9a77be00fd06d3945b6d2275b304344f, type: 3}
       propertyPath: m_Color.r
@@ -4651,7 +4775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4688,6 +4812,30 @@ PrefabInstance:
     - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786662, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786663, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786663, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599151873892786663, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.5598161
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7475401972a0814dbcfce64d58ca097, type: 3}
@@ -4761,7 +4909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7278371766246659011, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.26
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 7278371766246659011, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4799,9 +4947,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278371766246659011, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.424254
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278371766246659011, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.424254
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278371766246659011, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.424254
+      objectReference: {fileID: 0}
     - target: {fileID: 7278371766246659013, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
       propertyPath: m_Name
       value: PlanetPlaceholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278371766246659013, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478cc68ec1f9f57488210a28ce2d9780, type: 3}
@@ -4827,6 +4991,10 @@ PrefabInstance:
     - target: {fileID: 7496194662920925033, guid: 7f6cd9f3c53dcc147b33c454baccbd6a, type: 3}
       propertyPath: m_Name
       value: ScorePlacardStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496194662920925033, guid: 7f6cd9f3c53dcc147b33c454baccbd6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7496194662920925035, guid: 7f6cd9f3c53dcc147b33c454baccbd6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4952,6 +5120,10 @@ PrefabInstance:
     - target: {fileID: 7530148332171100752, guid: d8ca2fe76b470d544b544ebd65446b40, type: 3}
       propertyPath: m_Name
       value: ScoreCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530148332171100752, guid: d8ca2fe76b470d544b544ebd65446b40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7530148332171100780, guid: d8ca2fe76b470d544b544ebd65446b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5098,6 +5270,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Space Clouds BG
       objectReference: {fileID: 0}
+    - target: {fileID: 8211370841896741111, guid: 51cf6e05bcf14cd4ca9966f2372ecbb6, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211370841896741111, guid: 51cf6e05bcf14cd4ca9966f2372ecbb6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211370841896741111, guid: 51cf6e05bcf14cd4ca9966f2372ecbb6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8249159
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211370841896741111, guid: 51cf6e05bcf14cd4ca9966f2372ecbb6, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3882353
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51cf6e05bcf14cd4ca9966f2372ecbb6, type: 3}
 --- !u!1001 &8517838212604155542
@@ -5110,6 +5298,10 @@ PrefabInstance:
     - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: m_Name
       value: Note (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517838213737534641, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8517838213737534653, guid: b688c1add788cf044970fcef1cd341dc, type: 3}
       propertyPath: HighwayController
@@ -5195,6 +5387,10 @@ PrefabInstance:
     - target: {fileID: 1685758953334535757, guid: f5f27c8162e11ce43a031b19ec093f5d, type: 3}
       propertyPath: m_Name
       value: TrialAnim
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685758953334535757, guid: f5f27c8162e11ce43a031b19ec093f5d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2048443482689852234, guid: f5f27c8162e11ce43a031b19ec093f5d, type: 3}
       propertyPath: m_LocalPosition.x
