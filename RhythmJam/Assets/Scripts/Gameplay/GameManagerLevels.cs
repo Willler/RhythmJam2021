@@ -134,21 +134,21 @@ public class GameManagerLevels : MonoBehaviour
     IEnumerator normalNote()
     {
         normalNoteLight.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         normalNoteLight.SetActive(false);
     }
 
     IEnumerator goodNote()
     {
         goodNoteLight.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         goodNoteLight.SetActive(false);
     }
 
     IEnumerator PerfectNote()
     {
         perfectNoteLight.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         perfectNoteLight.SetActive(false);
     }
 }
