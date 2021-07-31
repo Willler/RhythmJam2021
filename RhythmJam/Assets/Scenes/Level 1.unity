@@ -2991,7 +2991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &592563332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10555,11 +10555,11 @@ PrefabInstance:
       objectReference: {fileID: 987801079}
     - target: {fileID: 2240096135273768336, guid: 4c0689d0e6a53574b9d7ad5a47513add, type: 3}
       propertyPath: scorePerGoodNote
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2240096135273768336, guid: 4c0689d0e6a53574b9d7ad5a47513add, type: 3}
       propertyPath: scorePerPerfectNote
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2240096135273768336, guid: 4c0689d0e6a53574b9d7ad5a47513add, type: 3}
       propertyPath: theBeatScroller
