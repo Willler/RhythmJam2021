@@ -15,9 +15,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip m_Button_Select= null;
     [SerializeField] private AudioClip m_Button_Back = null;
     [Space(10)]
-    [SerializeField] private AudioClip m_Pause = null;
-    [SerializeField] private AudioClip m_Unpause = null;
-    [Space(10)]
     [SerializeField] private AudioClip m_Note_Perfect = null;
     [SerializeField] private AudioClip m_Note_Good = null;
     [SerializeField] private AudioClip m_Note_Bad = null;
