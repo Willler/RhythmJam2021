@@ -83,13 +83,24 @@ public class PlayerHandler : MonoBehaviour
         {
             
             isOnCenterLane = false;
-            isOnLeftLane = false;
             isOnRightLane = true;
+            isOnLeftLane = false;
+            
         }
 
 
-      
-            if (Input.GetKey(KeyCode.LeftArrow))
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position = new Vector3(3.4f, -3.4f, 0f);
+
+            //Vector3 leftMovement;
+            //leftMovement = gameObject.transform.position;
+            //leftMovement.x = leftMovement.x - 3.4f;
+            //gameObject.transform.position = leftMovement;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.position = new Vector3(-3.4f, -3.4f, 0f);
 
@@ -98,6 +109,7 @@ public class PlayerHandler : MonoBehaviour
                 //leftMovement.x = leftMovement.x - 3.4f;
                 //gameObject.transform.position = leftMovement;
             }
+
 
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
@@ -109,15 +121,7 @@ public class PlayerHandler : MonoBehaviour
             //gameObject.transform.position = leftMovement;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            transform.position = new Vector3(3.4f, -3.4f, 0f);
-
-            //Vector3 leftMovement;
-            //leftMovement = gameObject.transform.position;
-            //leftMovement.x = leftMovement.x - 3.4f;
-            //gameObject.transform.position = leftMovement;
-        }
+        
 
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
